@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de textos</title>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="/imagenes/Logo.png" alt="logo de Alura">
+    </header>
+    <main>
+        <section class = "seccion-1">
+            <textarea id="textoEncriptado" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button type="button" id="botonEncriptado">Encriptar</button>
+                <button type="button" id="botonDesencriptado">Desencriptar</button>
+            </div>
+           
+        </section>
+        <section class="seccion-2">
+            <textarea name="resulado" id="textoDesencriptado" cols="20" rows="10"></textarea>
+            <div>
+                <button type="button" id="botonCopiar">Copiar</button>
+            </div>  
+        </section>
+    </main>
+    <footer>
+        By Jerson Duvan Jiménez Puentes
+    </footer>
+
+   
+   
+
+
+</body>
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+
+
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+
+
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+</html>
